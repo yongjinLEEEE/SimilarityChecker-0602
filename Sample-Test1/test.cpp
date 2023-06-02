@@ -10,3 +10,8 @@ TEST(TestCaseName, checkStrLength1) {
 	vector <string> input = { "A", "BB" };
 	EXPECT_EQ(0, SimilarityChecker().checkstrlength(input));
 }
+
+TEST(TestCaseName, checkStrLength3) {
+	vector <string> input = { "AAABB", "BAA" };
+	EXPECT_EQ(20, SimilarityChecker().checkstrlength(input));
+}
